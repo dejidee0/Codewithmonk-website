@@ -179,19 +179,15 @@
     margin: 0 auto 35px auto;
 }
 
-.carousel-control-prev, .carousel-control-next {
-    width: 50px; /* Smaller width */
-    height: 40px; /* Smaller height */
+.carousel-control-prev {
+    width: 90px;
+    height: 60px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background: var(--bs-primary);
-    opacity: 1;
-}
-
-.carousel-control-prev {
     left: 0;
+    background: var(--bs-primary);
     border-radius: 0 50px 50px 0;
+    opacity: 1;
 }
 
 .carousel-control-prev:hover {
@@ -200,8 +196,14 @@
 }
 
 .carousel-control-next {
+    width: 90px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
     right: 0;
+    background: var(--bs-primary);
     border-radius: 50px 0 0 50px;
+    opacity: 1;
 }
 
 .carousel-control-next:hover {
@@ -295,8 +297,22 @@
     }
 }
 
-/*** Carousel End ***/
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
 
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--bs-white);
+}
+
+.page-header .breadcrumb-item,
+.page-header .breadcrumb-item a {
+    font-size: 18px;
+    color: var(--bs-white);
+}
+
+/*** Carousel End ***/
 
 
 /*** Services Start ***/
