@@ -244,17 +244,16 @@
 }
 
 #carouselId .carousel-indicators li {
-    width: 30px;
-    height: 10px;
-    background: var(--bs-primary);
-    margin: 10px;
-    border-radius: 30px;
-    opacity: 1;
+    width: 10px; /* Adjust the width to your desired size */
+    height: 10px; /* Adjust the height to your desired size */
+    background-color: #007bff; /* Change the color if needed */
+    border-radius: 50%;
 }
 
 #carouselId .carousel-indicators li:hover {
-    background: var(--bs-secondary);
-    opacity: 1;
+    width: 12px; /* Slightly larger size for the active dot */
+    height: 12px;
+    background-color: #0056b3;
 }
 
 @media (max-width: 992px) {
