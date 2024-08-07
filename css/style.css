@@ -618,7 +618,7 @@
 /*** Testimonial End ***/
 
 
-/*** Contact Start ***/
+//*** Contact Start ***/
 .contact-detail::before {
     position: absolute;
     content: "";
@@ -640,7 +640,23 @@
     background: #26d48c;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-detail {
+        padding: 20px;
+    }
+
+    .contact-detail .row.g-5 > div {
+        margin-bottom: 20px;
+    }
+
+    .contact-form, .contact-map {
+        padding: 20px;
+    }
+}
+
 /*** Contact End ***/
+
 
 
 /*** Footer Start ***/
