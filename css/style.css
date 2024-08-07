@@ -617,8 +617,7 @@
 
 /*** Testimonial End ***/
 
-
-//*** Contact Start ***/
+/*** Contact Start ***/
 .contact-detail::before {
     position: absolute;
     content: "";
@@ -640,22 +639,49 @@
     background: #26d48c;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .contact-detail {
+.email-link {
+    word-wrap: break-word;
+    white-space: normal;
+    display: block;
+}
+
+@media (max-width: 991.98px) {
+    .contact-detail .col-lg-6,
+    .contact-detail .col-xl-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .address-link, .phone-link, .email-link {
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+    
+    .contact-form {
         padding: 20px;
     }
-
-    .contact-detail .row.g-5 > div {
-        margin-bottom: 20px;
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
     }
+    
+    .contact-form button {
+        width: 100%;
+    }
+}
 
-    .contact-form, .contact-map {
-        padding: 20px;
+@media (max-width: 575.98px) {
+    .contact-detail .col-lg-6 {
+        padding-bottom: 30px;
+    }
+    
+    .contact-detail .col-xl-4 {
+        padding-bottom: 15px;
     }
 }
 
 /*** Contact End ***/
+
+
 
 
 
